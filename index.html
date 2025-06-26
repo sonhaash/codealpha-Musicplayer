@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-yz3f+R9+8kH5M/F2nL0YjF0D1jxEJf0QKoMeY0U7iAqMjKcUeLZrwFZAcGZs8y84zUlA+TfYrQeLBozYuQKpiw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="container">
+    <h1>My music Playlist</h1>
+
+    <div class="player">
+      <img id="current-thumb" src="thumbnails/ocean.jpg" alt="Thumbnail">
+      <div class="details">
+        <h2 id="current-title">Select a song</h2>
+        <p id="current-artist">Artist</p>
+      </div>
+      <audio id="audio" controls></audio>
+
+      <!-- Control buttons -->
+        <div class="controls">
+  <button id="prevBtn" class="arrow-btn" title="Previous">&#8592;</button>
+  <button id="nextBtn" class="arrow-btn" title="Next">&#8594;</button>
+</div>
+    </div>
+
+    <ul id="playlist" class="playlist"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
